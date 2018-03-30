@@ -1,0 +1,81 @@
+@tailwind preflight;
+
+body {
+	@apply .font-sans .leading-normal .text-grey-darker;
+}
+
+header {
+	background: rgba(255, 255, 255, .9);
+}
+
+.feather {
+	width: 24px;
+	height: 24px;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+.title {
+	@apply .block .text-guava-dark .font-sans .font-black .text-4xl;
+}
+
+.subtitle {
+	@apply .block .text-guava-light .font-normal .text-2xl;
+}
+
+a {
+	@apply .no-underline;
+}
+
+.outline-none {
+	outline: none !important;
+}
+
+.transition {
+	transition: all .1s ease-in;
+}
+
+.transition-box-shadow {
+	transition: box-shadow .15s ease;
+}
+
+.transition-slow {
+	transition: all .2s ease-in;
+}
+
+.swiper-container {
+	@apply .w-full .h-full;
+}
+
+.swiper-slide {
+	@apply .text-center .text-lg .bg-white .flex .justify-center .items-center;
+}
+
+.swiper-pagination-bullet {
+	@apply .bg-white;
+
+	opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+// * {
+// 	border: 1px solid red;
+// }
+
+@import 'components/button.less';
+@import 'components/dropdown.less';
+@import 'components/forms.less';
+
+@tailwind components;
+
+@tailwind utilities;

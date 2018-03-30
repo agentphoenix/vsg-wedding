@@ -1,0 +1,44 @@
+.button {
+	@apply .inline-flex
+		   .justify-center
+		   .items-center
+		   .rounded
+		   .text-xl
+		   .p-3
+		   .shadow-stripe-sm
+		   .tracking-lg
+		   .uppercase
+		   .font-semibold
+		   .bg-guava
+		   .text-guava-lightest
+		   .leading-normal;
+
+	transition: all .15s ease;
+
+	&:hover {
+		@apply .text-white .bg-guava-light;
+
+		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+		transform: translateY(-1px);
+	}
+
+	&.is-block {
+		@apply .flex .w-full;
+	}
+
+	&.is-inverted {
+		@apply .bg-white .text-guava;
+
+		&:hover {
+			@apply .text-guava-light;
+		}
+	}
+
+	&.is-subtle {
+		@apply .bg-white .text-grey-dark;
+
+		&:hover {
+			@apply .text-grey-darker;
+		}
+	}
+}

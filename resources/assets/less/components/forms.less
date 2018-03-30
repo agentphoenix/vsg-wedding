@@ -1,0 +1,22 @@
+.field-group {
+	@apply .mb-4;
+}
+
+.field-group-lg {
+	@apply .mb-8;
+}
+
+.field {
+	@apply .block .w-full .p-4 .rounded .bg-white .text-grey-dark .shadow-stripe-xs .outline-none .transition-box-shadow;
+
+	&:-ms-input-placeholder,
+	&::-moz-placeholder,
+	&::-webkit-input-placeholder,
+	&::placeholder {
+		@apply .text-grey;
+	}
+
+	&:focus {
+		@apply .shadow-stripe-sm .text-grey-darker;
+	}
+}
